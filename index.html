@@ -41,7 +41,7 @@
             >
             <a
               class="list-group-item list-group-item-action"
-              id="list-profile-list"
+              id="list-profile-list miami"
               data-toggle="list"
               href="#list-profile"
               role="tab"
@@ -49,7 +49,7 @@
             >
             <a
               class="list-group-item list-group-item-action"
-              id="list-messages-list"
+              id="list-messages-list losAngeles"
               data-toggle="list"
               href="#list-messages"
               role="tab"
@@ -57,7 +57,7 @@
             >
             <a
               class="list-group-item list-group-item-action"
-              id="list-settings-list"
+              id="list-settings-list newYork"
               data-toggle="list"
               href="#list-settings"
               role="tab"
@@ -67,11 +67,22 @@
         </div>
         <div class="jumbotron col-8">
           <div class="container">
-            <h1 class="display-4">Fluid jumbotron</h1>
-            <p class="lead">
-              This is a modified jumbotron that occupies the entire horizontal
-              space of its parent.
+              <p><img id= "img"></img></p>
+            <h1 class="display-4" id="jumboDisplay"><span id="jumbotron"></span></h1>
+            <h1 id="date"></h1>
+            <img class="weatherPic"></img>
+            <p>
+              Temperature:<span id="temp"></span>
             </p>
+            <p class="hum">
+                Humidity:<span id="hum"></span>
+              </p>
+              <p class="wind">
+                Wind Speed:<span id="wind"></span>
+              </p>
+              <p >
+                UV Index:<span id="uv"></span>
+              </p>
           </div>
         </div>
       </div>
@@ -79,13 +90,22 @@
    
 
     <div class="container cardContainer row w-100">
-        <div class="card text-white bg-dark mb-3 col" style="max-width: 18rem">
+        <div class="card text-white bg-dark mb-3 col" id="weatherOne" style="max-width: 18rem">
             <div class="card-header" id="weatherFive>Header</div>
             <div class="card-body">
               <h5 class="card-title">Dark card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up the
-                bulk of the card's content.
+              <img class="weatherPic"></img>
+            <p>
+              Temperature:<span id="tempone"></span>
+            </p>
+            <p class="hum">
+                Humidity:<span id="humone"></span>
+              </p>
+              <p class="wind">
+                Wind Speed:<span id="windone"></span>
+              </p>
+              <p >
+                UV Index:<span id="uvone"></span>
               </p>
             </div>
           </div>
@@ -93,45 +113,79 @@
             <div class="card-header" id="weatherFive>Header</div>
             <div class="card-body">
               <h5 class="card-title">Dark card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up the
-                bulk of the card's content.
+              <p>
+                Temperature:<span id="temptwo"></span>
               </p>
+              <p class="hum">
+                  Humidity:<span id="humtwo"></span>
+                </p>
+                <p class="wind">
+                  Wind Speed:<span id="windtwo"></span>
+                </p>
+                <p >
+                  UV Index:<span id="uvtwo"></span>
+                </p>
             </div>
           </div>
           <div class="card text-white bg-dark mb-3 col" style="max-width: 18rem">
             <div class="card-header" id="weatherFive>Header</div>
             <div class="card-body">
               <h5 class="card-title">Dark card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up the
-                bulk of the card's content.
+              <p>
+                Temperature:<span id="tempthree"></span>
               </p>
+              <p class="hum">
+                  Humidity:<span id="humthree"></span>
+                </p>
+                <p class="wind">
+                  Wind Speed:<span id="windthree"></span>
+                </p>
+                <p >
+                  UV Index:<span id="uvthree"></span>
+                </p>
             </div>
           </div>
           <div class="card text-white bg-dark mb-3 col" style="max-width: 18rem">
             <div class="card-header" id="weatherFive>Header</div>
             <div class="card-body">
               <h5 class="card-title">Dark card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up the
-                bulk of the card's content.
+              <p>
+                Temperature:<span id="tempfour"></span>
               </p>
+              <p class="hum">
+                  Humidity:<span id="humfour"></span>
+                </p>
+                <p class="wind">
+                  Wind Speed:<span id="windfour"></span>
+                </p>
+                <p >
+                  UV Index:<span id="uvfour"></span>
+                </p>
             </div>
           </div>
       <div class="card text-white bg-dark mb-3 col" style="max-width: 18rem">
         <div class="card-header" id="weatherFive>Header</div>
         <div class="card-body">
           <h5 class="card-title">Dark card title</h5>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
+          <p>
+            Temperature:<span id="tempfive"></span>
           </p>
+          <p class="hum">
+              Humidity:<span id="humfive"></span>
+            </p>
+            <p class="wind">
+              Wind Speed:<span id="windfive"></span>
+            </p>
+            <p >
+              UV Index:<span id="uvfive"></span>
+            </p>
         </div>
       </div>
     
     </div>
 
+
+    
     <script
     src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -143,7 +197,8 @@
     crossorigin="anonymous"
   ></script>
 
-
+<script src="./script.js">
+</script>
 
   </body>
 </html>
