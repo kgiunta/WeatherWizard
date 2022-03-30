@@ -19,3 +19,7 @@ img {
 .card {
   margin-left: 4px;
 }
+button {
+  display: flex;
+  align-items: center;
+}

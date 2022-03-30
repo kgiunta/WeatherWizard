@@ -7,28 +7,18 @@ $("#three").text(moment().add("days", 3).format("L"));
 $("#four").text(moment().add("days", 4).format("L"));
 $("#five").text(moment().add("days", 5).format("L"));
 // var createButton = document.getElementById("createButton");
+var createButton = document.getElementById("buttonCreate");
 
-var citys = document.getElementById("userInput").value;
+var city = "";
+//  document.getElementById("userInput").value;
 console.log(userSearch.value);
-localStorage.setItem("CitySearch", citys);
-var storeWeather = document.getElementById("userInput");
-var logDays = localStorage.getItem("CitySearch");
-storeWeather.textContent = logDays;
 
-// var cityNames = document.createElement("button");
-// cityNames.textContent = userSearch.value;
-// createButton.append(cityNames);
-
-// make a var by document.createlemt searchButton
-// city.textContent = input value
-// container.append(city)
-// add onclick to
 var searchButton = document.getElementById("searchBtn");
 
 function getInputFromSearch(event) {
   event.preventDefault();
 
-  var city = document.getElementById("userInput").value;
+  city = document.getElementById("userInput").value;
 
   var queryURL =
     "https://api.openweathermap.org/data/2.5/weather?q=" +
@@ -44,6 +34,14 @@ function getInputFromSearch(event) {
       fiveDays(city, jsonInfo.coord.lat, jsonInfo.coord.lon);
       //   console.log(jsonInfo.name);
     });
+  searchButton.addEventListener("click", getInputFromSearch);
+  var cityNames = document.createElement("button");
+  cityNames.textContent = city;
+  createButton.append(cityNames);
+  localStorage.setItem("CitySearch", city);
+  var storeWeather = document.getElementById("userInput");
+  var logDays = localStorage.getItem("CitySearch");
+  storeWeather.textContent = logDays;
 }
 searchButton.addEventListener("click", getInputFromSearch);
 
