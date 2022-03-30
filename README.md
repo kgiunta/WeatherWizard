@@ -17,6 +17,10 @@ Below are the table of contents for this weather application.
 
 This code was developed from scratch. Using the third party API I created an API key to allow access to the data and then uploaded to Github.
 
+This application is deployed in the following links:
+https://github.com/kgiunta/WeatherWizard
+https://kgiunta.github.io/WeatherWizard/
+
 ## Usage
 
 Input which city you would like to see in the search bar and watch the current weather populate as well as the five day forecast.
