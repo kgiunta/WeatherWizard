@@ -22,4 +22,6 @@ img {
 button {
   display: flex;
   align-items: center;
+  background-color: navy;
+  color: white;
 }
