@@ -31,7 +31,7 @@ function getInputFromSearch(event) {
   var city = document.getElementById("userInput").value;
 
   var queryURL =
-    "http://api.openweathermap.org/data/2.5/weather?q=" +
+    "https://api.openweathermap.org/data/2.5/weather?q=" +
     city +
     "&appid=" +
     APIKey;
