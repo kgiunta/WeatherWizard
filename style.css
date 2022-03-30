@@ -8,3 +8,14 @@ header {
 img {
   width: 85px;
 }
+
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+.card {
+  margin-left: 4px;
+}
